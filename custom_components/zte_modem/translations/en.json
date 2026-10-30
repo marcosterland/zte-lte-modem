@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ZTE LTE Modem",
+        "description": "Connect to your ZTE modem web interface.",
+        "data": {
+          "host": "Host",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the modem.",
+      "invalid_auth": "Invalid password or login failed.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This modem is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "lte_rsrp": { "name": "LTE RSRP" },
+      "lte_rsrq": { "name": "LTE RSRQ" },
+      "lte_rssi": { "name": "LTE RSSI" },
+      "lte_snr": { "name": "LTE SNR" },
+      "signalbar": { "name": "Signal bars" },
+      "network_type": { "name": "Network type" },
+      "network_provider": { "name": "Network provider" },
+      "wan_active_band": { "name": "Active band" },
+      "cell_id": { "name": "Cell ID" },
+      "lte_pci": { "name": "LTE PCI" },
+      "wan_ipaddr": { "name": "WAN IP" },
+      "ppp_status": { "name": "PPP status" },
+      "simcard_roam": { "name": "SIM roaming" },
+      "realtime_rx_thrpt": { "name": "Download rate" },
+      "realtime_tx_thrpt": { "name": "Upload rate" },
+      "monthly_rx_bytes": { "name": "Monthly download" },
+      "monthly_tx_bytes": { "name": "Monthly upload" },
+      "battery_vol_percent": { "name": "Battery" },
+      "sim_iccid": { "name": "SIM ICCID" },
+      "imei": { "name": "IMEI" },
+      "hardware_version": { "name": "Hardware version" },
+      "wa_inner_version": { "name": "Firmware version" },
+      "sms_inbox": { "name": "SMS inbox" }
+    },
+    "button": {
+      "reboot": { "name": "Reboot modem" }
+    },
+    "switch": {
+      "mobile_data": { "name": "Mobile data" }
+    }
+  }
+}
